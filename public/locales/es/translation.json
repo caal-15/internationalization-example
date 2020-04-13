@@ -1,0 +1,34 @@
+{
+  "normalTranslation": {
+    "title": "Esta es una traducción normal",
+    "content": "Tiene una frase común asociada a una llave que se puede acceder fácilmente"
+  },
+  "interpolatedTranslation": {
+    "title": "Esta es una traducción interpolada",
+    "content": "Es una forma de pasar parámetros, por ejemplo el color ({{car.color}}) y peso ({{car.weight}}) de un carro y su dueño: {{owner}}"
+  },
+  "formattedTranslation": {
+    "title": "Esta es una traducción formateada",
+    "content": "En este caso, formatea una fecha en el formato específico de la región: {{date, YYYY-MM-DD}}"
+  },
+  "pluralTranslation": {
+    "title": "Esta es una traducción de plurales",
+    "content": "Es usada para traducir plurales correctamente, puede manejar singular y plural básico:",
+    "pluralSimple": "cosa",
+    "pluralSimple_plural": "cosas",
+    "contentCount": "Y puede incluir el número de objetos (vía interpolación):",
+    "pluralCount": "{{count}} cosa",
+    "pluralCount_plural": "{{count}} cosas"
+  },
+  "nestedTranslation": {
+    "title": "Esta es una traducción anidada",
+    "content": "Anida una traducción dentro de otra, por ejemplo, $t(nestedTranslation.contentNested, { 'sentName': \"{{name}}\" })",
+    "contentNested": "esta pieza está anidada y recibió un nombre de argumento: {{sentName}}"
+  },
+  "contextualTranslation": {
+    "title": "Esta es una traducción contextual",
+    "content": "Es usada como un tipo de condicional para diferenciar posibles traducciones. e.g.:",
+    "inlaw_male": "yerno",
+    "inlaw_female": "nuera"
+  }
+}

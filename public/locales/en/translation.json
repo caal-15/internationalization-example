@@ -1,0 +1,38 @@
+{
+  "normalTranslation": {
+    "title": "This is a normal Translation",
+    "content": "It has a common phrase associated with a key that you can easily access"
+  },
+  "interpolatedTranslation": {
+    "title": "This is an interpolated translation",
+    "content": "It's a way of passing parameters, for example a car's color ({{car.color}}) and weight ({{car.weight}}) and it's owner: {{owner}}"
+  },
+  "formattedTranslation": {
+    "title": "This is a formatted Translation",
+    "content": "In this case, it formats a date in region specific format: {{date, MM/DD/YYYY}}"
+  },
+  "pluralTranslation": {
+    "title": "This is a plural Translation",
+    "content": "It's used to correctly translate plurals, it can handle basic singular plural:",
+    "pluralSimple": "thing",
+    "pluralSimple_plural": "things",
+    "contentCount": "And it can include the count (via interpolation):",
+    "pluralCount": "{{count}} thing",
+    "pluralCount_plural": "{{count}} things"
+  },
+  "nestedTranslation": {
+    "title": "This is a nested Translation",
+    "content": "It nests a key into aother key, for example, $t(nestedTranslation.contentNested, {'sentName': \"{{name}}\" })",
+    "contentNested": "this piece is nested and received a name as argument: {{sentName}}"
+  },
+  "contextualTranslation": {
+    "title": "This is a contextual Translation",
+    "content": "It's used as a sort of conditional to differentiate possible translations. e.g.:",
+    "inlaw_male": "son in law",
+    "inlaw_female": "daughter in law"
+  },
+  "htmlTranslation": {
+    "title": "This translation uses HTML",
+    "content": "It can <1>replace</1> inner HTML <3>nodes</3>"
+  }
+}
